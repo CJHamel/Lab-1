@@ -6,6 +6,7 @@ sys.setrecursionlimit(10**6)
 
 #* Team-Member Intro Lines
 # Hello, I am Iris
+#Hello, I am group member b, Christopher
 
 #* Data Definitions
 
