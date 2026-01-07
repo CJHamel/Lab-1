@@ -1,4 +1,5 @@
 from typing import *
+from typing_extensions import TypeAlias
 from dataclasses import dataclass
 import unittest
 import sys
