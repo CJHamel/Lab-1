@@ -13,18 +13,35 @@ sys.setrecursionlimit(10**6)
 #* 1)
 Celsius: TypeAlias = int
 Fahrenheit: TypeAlias = int
+
+celsius_example_1: Celsius = 0
+celsius_example_2: Celsius = 100
+fahrenheit_example_1: Fahrenheit = 32
+fahrenheit_example_2: Fahrenheit = 212
+
 #* 2)
 Cents: TypeAlias = int
+
+cents_example_1: Cents = 99
+cents_example_2: Cents = 100
+
 #* 3)
-dataclass(frozen = True)
+@dataclass(frozen = True)
 class PriceRecord:
     name: str
     price_in_cents: Cents
+    
+price_record_example1: PriceRecord = PriceRecord("apple", 50)
+price_record_example2: PriceRecord = PriceRecord("Laptop", 1000)
 #* 4)
-dataclass(frozen = True)
+@dataclass(frozen = True)
 class MusicalNote:
     frequency: int
     duration: int
+
+note_example1: MusicalNote = MusicalNote(440, 2)
+note_example2: MusicalNote = MusicalNote(880, 1)
+
 #* Design Recipe
 
 #* 1)
