@@ -47,31 +47,23 @@ note_example2: MusicalNote = MusicalNote(880, 1)
 #* Design Recipe
 
 #* 1)
+# Converts a temperature from Celsius to Fahrenheit.
 def celsius_to_fahrenheit(cel : Celsius) -> Fahrenheit:
-    """
-    Converts a temperature from Celsius to Fahrenheit.
-    """
     temp = Fahrenheit((cel * 9/5) + 32)
     return temp
 #* 2)
+#Returns a new MusicalNote that is one octave higher (frequency doubled).
 def up_one_octave(note : MusicalNote) -> MusicalNote:
-    """
-    Returns a new MusicalNote that is one octave higher (frequency doubled).
-    """
     return MusicalNote(note.frequency * 2, note.duration)
 #* 3)
+#Returns the second largest of three distinct integers.
 def second_largest(x: int, y: int, z: int) -> int:
-    """
-    Returns the second largest of three distinct integers.
-    """
     numbers = [x, y, z]
     numbers.sort()
     return numbers[1]
 #* 4)
+# Returns True if the string contains no capital letters, False otherwise.
 def no_caps(words: str) -> bool:
-    """
-    Returns True if the string contains no capital letters, False otherwise.
-    """
     result = True
     for w in words:
         if w.isupper():
